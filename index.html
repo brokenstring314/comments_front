@@ -7,7 +7,7 @@
     <title>Tailwind Vue3 留言板</title>
 </head>
 <body>
-<!--    <div id="app"></div>-->
+    <div id="app"></div>
 <main class="p-4 bg-gray-100 min-h-screen">
     <div class="max-w-screen-xl mx-auto bg-white p-8 rounded-lg shadow-2xl">
         <div class="flex row-auto items-center">
@@ -37,48 +37,55 @@
             </fieldset>
             <div class="border-b border-gray-300 my-2 mb-4"></div>
             <div>
-                <div class="flex">
-                    <!--                    offline可修改状态为下线-->
-                    <div class="avatar online">
-                        <div class="w-16 rounded-full">
-                            <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"/>
+                <div class="my-3">
+                    <div class="flex mb-3 items-center">
+                        <!--                    offline可修改状态为下线-->
+                        <div class="avatar online">
+                            <div class="w-16 rounded-full">
+                                <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"/>
+                            </div>
                         </div>
+                        <div class="ml-3">
+                            <p>梦落轻寻</p>
+                            <p class="text-gray-600 text-sm">现在在线</p>
+                        </div>
+                        <span class="ml-auto">
+                            <img class="w-5" src="/svg_images/three_point.svg" alt="SVG Image">
+                        </span>
                     </div>
-                    <div>
-                        <p>梦落轻寻</p>
-                        <p class="text-gray-600 text-sm">现在在线</p>
+                    <p>
+                        在协议的控制下，两个对等实体间的通信使得本层能够向上一层提供服务。要实现本层协议，还需要使用下面一层所提供的服务。一定要弄清楚，协议和服务在概念上是很不一样的。
+                    </p>
+                </div>
+                <div class="border-l-2 border-gray-200 pb-4">
+                    <div class="flex pl-8 mb-3 items-center">
+                        <div class="avatar offline">
+                            <div class="w-12 rounded-full">
+                                <img src="/images/liu_image.jpg"/>
+                            </div>
+                        </div>
+                        <div class="ml-3">
+                            <p>别惧一嗝儿~</p>
+                            <p class="text-gray-600 text-sm">2 小时前在线</p>
+                        </div>
+                        <span class="ml-auto">
+                            <img class="w-5" src="/svg_images/three_point.svg" alt="SVG Image">
+                        </span>
                     </div>
-                    <span class="ml-auto">
-                        <svg t="1709372049822" class="icon h-5 w-5 text-gray-300" viewBox="0 0 1024 1024" version="1.1"
-                             xmlns="http://www.w3.org/2000/svg" p-id="1933" width="200" height="200"><path
-                                d="M395.21211 182.914448c0 62.669318 49.541323 113.472378 110.642936 113.472378 61.093427 0 110.652146-50.80306 110.65214601-113.472378 0-62.685691-49.559742-113.487727-110.65214601-113.487727C444.75241 69.426721 395.21211 120.22978 395.21211 182.914448zM395.21211 523.34693101c0 62.668295 49.541323 113.487727 110.642936 113.48772699 61.093427 0 110.652146-50.820456 110.652146-113.487727 0-62.669318-49.559742-113.472378-110.652146-113.472378C444.75241 409.874553 395.21211 460.67761301 395.21211 523.34693101zM395.21211 841.084529c0 62.686714 49.541323 113.488751 110.642936 113.488751 61.093427 0 110.652146-50.80203599 110.65214601-113.488751 0-62.669318-49.559742-113.471354-110.65214601-113.471354C444.75241 727.614198 395.21211 778.416234 395.21211 841.084529z"
-                                p-id="1934"></path></svg>
-                    </span>
+                    <p class="pl-8">Build, test, and deploy your code. Make code reviews, branch management, and issue
+                        triaging work
+                        the way you want. Select a workflow to get started.
+                        在 CSS 中，父元素的布局方式可能会影响到子元素的样式，这也包括 Flex 布局。当父元素使用了 flex
+                        flex-col 来设置为垂直方向的弹性容器时，子元素如果使用了 inline-flex，其布局方式可能会受到父元素的影响。
 
+                        这是因为在 Flex 布局中，父元素的主轴方向（flex-direction）会影响子元素的排列方式。当父元素使用
+                        flex-col 设置为垂直方向时，子元素使用 inline-flex
+                        可能会导致子元素按照垂直方向进行排列，因为子元素默认会沿着父元素的主轴方向进行排列。
+                    </p>
                 </div>
-                <p>235646524143467543132345687574325465769854321434586798543435465768</p>
-                <div class="flex pl-8 border-l-2 border-gray-200">
-                    <div class="avatar online">
-                        <div class="w-12 rounded-full">
-                            <img src="/images/liu_image.jpg"/>
-                        </div>
-                    </div>
-                    <div>
-                        <p>梦落轻寻</p>
-                        <p class="text-gray-600 text-sm">现在在线</p>
-                    </div>
-                    <span class="ml-auto">
-                        <svg t="1709372049822" class="icon h-4 w-4 text-gray-300" viewBox="0 0 1024 1024" version="1.1"
-                             xmlns="http://www.w3.org/2000/svg" p-id="1933" width="200" height="200"><path
-                                d="M395.21211 182.914448c0 62.669318 49.541323 113.472378 110.642936 113.472378 61.093427 0 110.652146-50.80306 110.65214601-113.472378 0-62.685691-49.559742-113.487727-110.65214601-113.487727C444.75241 69.426721 395.21211 120.22978 395.21211 182.914448zM395.21211 523.34693101c0 62.668295 49.541323 113.487727 110.642936 113.48772699 61.093427 0 110.652146-50.820456 110.652146-113.487727 0-62.669318-49.559742-113.472378-110.652146-113.472378C444.75241 409.874553 395.21211 460.67761301 395.21211 523.34693101zM395.21211 841.084529c0 62.686714 49.541323 113.488751 110.642936 113.488751 61.093427 0 110.652146-50.80203599 110.65214601-113.488751 0-62.669318-49.559742-113.471354-110.65214601-113.471354C444.75241 727.614198 395.21211 778.416234 395.21211 841.084529z"
-                                p-id="1934"></path></svg>
-                    </span>
-                </div>
+                <button class="btn-link my-2">回复</button>
             </div>
-
-
         </main>
-
     </div>
 </main>
 <script type="module" src="/src/main.js"></script>

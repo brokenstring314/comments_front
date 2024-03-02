@@ -1,9 +1,10 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
+import Header from "./components/Header.vue";
 </script>
 
 <template>
-
+  <Header></Header>
   <h1 class="text-amber-400xl font-bold underline">
     Hello world;
   </h1>
